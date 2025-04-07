@@ -183,8 +183,6 @@ unique_vendors = df['VendorID'].dropna().unique()
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
-app.server = server
-
 app.layout = dbc.Container([
     html.H1("NYC Taxi Trip Dashboard", className="text-center my-4"),
 
